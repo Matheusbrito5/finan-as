@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como Sair do Vermelho Ganhando um Salário Mínimo</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1839357353669721');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1839357353669721&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+  :root{
+    --navy:#12233A; --navy-light:#1E3B5C; --gold:#C6900C; --gold-light:#E9C165; --gold-dark:#946B08;
+    --green:#2A6B4A; --green-light:#3E8A63; --red:#B3382A; --red-light:#C6564A;
+    --paper:#FAF6EC; --line:#E4D9BE; --ink:#1B2430;
+  }
+  *{margin:0; padding:0; box-sizing:border-box;}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height:1.55;
+  }
+  h1,h2,h3{ font-family: Georgia, 'Times New Roman', serif; color: var(--navy); }
+  .wrap{ max-width: 880px; margin:0 auto; padding: 0 28px; }
+  a{ text-decoration:none; }
+
+  /* HERO */
+  .hero{
+    background: linear-gradient(165deg, var(--navy) 0%, #0C1826 100%);
+    color:#fff; padding: 64px 0 84px;
+  }
+  .hero .eyebrow{
+    color: var(--gold-light); font-size:15px; font-weight:700; letter-spacing:4px; text-transform:uppercase; text-align:center;
+  }
+  .hero h1{
+    color:#fff; font-size:42px; line-height:1.25; text-align:center; margin:18px auto 20px; max-width:720px;
+  }
+  .hero h1 .hl{ color: var(--gold-light); }
+  .hero .sub{
+    text-align:center; font-size:19px; color:#DDE3EC; max-width:620px; margin:0 auto 34px;
+  }
+  .hero-cta{
+    display:block; max-width:420px; margin: 0 auto; text-align:center;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold));
+    color: var(--navy); font-weight:800; font-size:19px; letter-spacing:0.3px;
+    padding:18px 20px; border-radius:12px; box-shadow: 0 8px 0 rgba(0,0,0,0.25);
+  }
+  .hero-note{ text-align:center; color:#B9C2CF; font-size:14px; margin-top:14px; }
+
+  .stampbar{
+    display:flex; justify-content:center; gap:14px; margin: 40px auto 0; flex-wrap:wrap;
+  }
+  .stamp{
+    background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15);
+    border-radius:10px; padding:14px 20px; text-align:center; min-width:140px;
+  }
+  .stamp .n{ color: var(--gold-light); font-family:Georgia, serif; font-size:26px; font-weight:700; }
+  .stamp .l{ color:#C7CFDA; font-size:12px; letter-spacing:0.5px; margin-top:2px; }
+
+  /* SECTION GENERIC */
+  section{ padding: 64px 0; }
+  .section-title{ font-size:32px; text-align:center; margin-bottom:14px; }
+  .section-sub{ text-align:center; color:#5B6472; font-size:17px; max-width:600px; margin:0 auto 40px; }
+
+  /* PAIN */
+  .pain{ background:#fff; }
+  .pain-list{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; max-width:760px; margin:0 auto; }
+  .pain-item{
+    display:flex; gap:12px; align-items:flex-start; background: var(--paper);
+    border:1px solid var(--line); border-radius:12px; padding:18px 20px;
+  }
+  .pain-item .x{ color: var(--red); font-weight:800; font-size:20px; }
+  .pain-item p{ font-size:16px; color: var(--ink); }
+
+  /* BRIDGE */
+  .bridge{ text-align:center; }
+  .bridge blockquote{
+    font-family: Georgia, serif; font-size:26px; color: var(--navy); font-style:italic;
+    max-width:700px; margin: 0 auto; line-height:1.5; border-left:4px solid var(--gold); padding-left:24px; text-align:left;
+  }
+
+  /* TRANSFORM TABLE */
+  .transform{ background:#fff; }
+  table.transform-table{
+    width:100%; max-width:640px; margin:0 auto; border-collapse:collapse; font-size:16px;
+  }
+  table.transform-table th{
+    background: var(--navy); color:#fff; padding:12px 16px; text-align:left; font-size:14px; letter-spacing:0.5px;
+  }
+  table.transform-table td{ padding:12px 16px; border-bottom:1px solid var(--line); }
+  table.transform-table tr:last-child td{ font-weight:800; }
+  .red-txt{ color:var(--red); font-weight:700; }
+  .green-txt{ color:var(--green); font-weight:700; }
+
+  /* WHATS INSIDE */
+  .inside{ }
+  .chapters{ display:flex; flex-direction:column; gap:10px; max-width:700px; margin: 0 auto; }
+  .chapter{
+    display:flex; gap:16px; align-items:center; background:#fff; border:1px solid var(--line);
+    border-radius:10px; padding:16px 20px;
+  }
+  .chapter .num{
+    font-family: Georgia, serif; color: var(--gold-dark); font-size:22px; font-weight:700; min-width:34px;
+  }
+  .chapter .txt{ font-size:16px; color: var(--ink); }
+
+  /* BONUS */
+  .bonus{ background:#fff; }
+  .bonus-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; max-width:760px; margin:0 auto; }
+  .bonus-item{
+    display:flex; gap:10px; align-items:flex-start; font-size:15px; padding:14px 16px;
+    background: var(--paper); border-radius:10px; border:1px solid var(--line);
+  }
+  .bonus-item .check{ color: var(--green); font-weight:800; }
+
+  /* OFFER */
+  .offer{
+    background: linear-gradient(165deg, var(--navy), #0C1826); color:#fff; text-align:center;
+  }
+  .offer h2{ color:#fff; }
+  .offer-card{
+    background:#fff; color: var(--ink); max-width:480px; margin: 34px auto 0; border-radius:18px;
+    padding:36px 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+  .offer-card .old-price{ color:#8A93A0; text-decoration:line-through; font-size:18px; }
+  .offer-card .price{ font-family:Georgia, serif; font-size:56px; color: var(--navy); font-weight:700; margin:6px 0 4px; }
+  .offer-card .price-note{ color:#5B6472; font-size:14px; margin-bottom:22px; }
+  .offer-card .cta{
+    display:block; background: linear-gradient(180deg, var(--gold-light), var(--gold)); color: var(--navy);
+    font-weight:800; font-size:18px; padding:16px; border-radius:12px; box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+  }
+  .offer-card .items{ text-align:left; margin: 22px 0; }
+  .offer-card .items div{ display:flex; gap:10px; font-size:15px; margin-bottom:10px; }
+  .offer-card .items .check{ color: var(--green); font-weight:800; }
+  .guarantee{
+    max-width:480px; margin: 22px auto 0; display:flex; gap:12px; align-items:center;
+    background: rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:12px; padding:16px 18px;
+    text-align:left;
+  }
+  .guarantee .seal{ font-size:30px; }
+  .guarantee p{ font-size:14px; color:#DDE3EC; }
+
+  /* FAQ */
+  .faq{ background:#fff; }
+  .faq-item{ max-width:700px; margin: 0 auto 14px; border-bottom:1px solid var(--line); padding-bottom:14px; }
+  .faq-item h3{ font-size:18px; margin-bottom:6px; }
+  .faq-item p{ font-size:15px; color:#4A5261; }
+
+  /* FINAL CTA */
+  .final{ text-align:center; }
+  .final h2{ font-size:30px; margin-bottom:14px; }
+  .final p{ color:#5B6472; max-width:520px; margin: 0 auto 26px; font-size:16px; }
+  .final .cta{
+    display:inline-block; background: var(--navy); color: var(--gold-light); font-weight:800; font-size:19px;
+    padding:18px 36px; border-radius:12px; box-shadow: 0 8px 0 rgba(18,35,58,0.3);
+  }
+
+  footer{ text-align:center; padding: 36px 0; color:#8A93A0; font-size:13px; }
+
+  @media (max-width:600px){
+    .hero h1{ font-size:30px; }
+    .pain-list{ grid-template-columns: 1fr; }
+    .bonus-grid{ grid-template-columns: 1fr; }
+    .stampbar{ gap:10px; }
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Método passo a passo · Acesso imediato</div>
+      <h1>Fecha o mês <span class="hl">no vermelho</span> mesmo trabalhando o mês inteiro?</h1>
+      <p class="sub">O guia prático que ensina, passo a passo, como organizar suas finanças, negociar dívidas e criar sua reserva de emergência — mesmo ganhando só um salário mínimo.</p>
+      <a class="hero-cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Quero sair do vermelho agora →</a>
+      <p class="hero-note">E-book + 10 planilhas prontas · Pagamento único de R$27</p>
+
+      <div class="stampbar">
+        <div class="stamp"><div class="n">8</div><div class="l">CAPÍTULOS PRÁTICOS</div></div>
+        <div class="stamp"><div class="n">10</div><div class="l">PLANILHAS PRONTAS</div></div>
+        <div class="stamp"><div class="n">90</div><div class="l">DIAS DE PLANO</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pain">
+    <div class="wrap">
+      <h2 class="section-title">Isso parece com você?</h2>
+      <p class="section-sub">Se você se identificar com pelo menos 2 destas frases, este guia foi escrito pensando exatamente em você.</p>
+      <div class="pain-list">
+        <div class="pain-item"><span class="x">✕</span><p>Você trabalha o mês inteiro e, mesmo assim, o dinheiro nunca fecha.</p></div>
+        <div class="pain-item"><span class="x">✕</span><p>Você não sabe, com exatidão, pra onde seu salário está indo.</p></div>
+        <div class="pain-item"><span class="x">✕</span><p>Você usa o cartão de crédito pra cobrir imprevistos pequenos.</p></div>
+        <div class="pain-item"><span class="x">✕</span><p>Você acredita que só vai se organizar quando ganhar mais.</p></div>
+        <div class="pain-item"><span class="x">✕</span><p>Você já tentou se organizar sozinho e não conseguiu manter.</p></div>
+        <div class="pain-item"><span class="x">✕</span><p>Você sente vergonha ou medo de negociar suas dívidas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bridge">
+    <div class="wrap">
+      <blockquote>Você não precisa ganhar mais para sair do vermelho. Precisa, pela primeira vez, ver para onde seu dinheiro está indo — e decidir, você, para onde ele deveria ir.</blockquote>
+    </div>
+  </section>
+
+  <section class="transform">
+    <div class="wrap">
+      <h2 class="section-title">O que muda quando você aplica o método</h2>
+      <p class="section-sub">Exemplo real de reorganização de orçamento com renda de 1 salário mínimo (R$ 1.621,00):</p>
+      <table class="transform-table">
+        <tr><th>Item</th><th>Antes</th><th>Depois</th></tr>
+        <tr><td>Cartão de crédito (juros do rotativo)</td><td class="red-txt">R$ 300,00/mês</td><td class="green-txt">Renegociado</td></tr>
+        <tr><td>Mercado (sem planejamento)</td><td class="red-txt">R$ 500,00/mês</td><td class="green-txt">R$ 380,00/mês</td></tr>
+        <tr><td>Reserva de emergência</td><td class="red-txt">R$ 0,00</td><td class="green-txt">R$ 41,00/mês</td></tr>
+        <tr><td>Saldo no fim do mês</td><td class="red-txt">-R$ 379,00</td><td class="green-txt">R$ 0,00 (equilibrado)</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="inside">
+    <div class="wrap">
+      <h2 class="section-title">O que você vai encontrar dentro do guia</h2>
+      <p class="section-sub">8 capítulos práticos, cada um com exemplo real, passo a passo, exercício e checklist.</p>
+      <div class="chapters">
+        <div class="chapter"><div class="num">01</div><div class="txt">Por que você continua no vermelho (mesmo trabalhando duro)</div></div>
+        <div class="chapter"><div class="num">02</div><div class="txt">O raio-X das suas finanças — o diagnóstico completo</div></div>
+        <div class="chapter"><div class="num">03</div><div class="txt">O orçamento que cabe no seu salário mínimo</div></div>
+        <div class="chapter"><div class="num">04</div><div class="txt">Cortando gastos sem perder qualidade de vida</div></div>
+        <div class="chapter"><div class="num">05</div><div class="txt">Como negociar suas dívidas sem vergonha e sem medo</div></div>
+        <div class="chapter"><div class="num">06</div><div class="txt">Reserva de emergência mesmo ganhando pouco</div></div>
+        <div class="chapter"><div class="num">07</div><div class="txt">Hábitos financeiros que realmente funcionam</div></div>
+        <div class="chapter"><div class="num">08</div><div class="txt">Como evitar voltar para o vermelho</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bonus">
+    <div class="wrap">
+      <h2 class="section-title">+ 10 materiais prontos pra preencher</h2>
+      <p class="section-sub">Sem precisar criar nada do zero — é só abrir e preencher.</p>
+      <div class="bonus-grid">
+        <div class="bonus-item"><span class="check">✓</span>Planilha de controle de gastos</div>
+        <div class="bonus-item"><span class="check">✓</span>Planejamento financeiro mensal</div>
+        <div class="bonus-item"><span class="check">✓</span>Controle de dívidas</div>
+        <div class="bonus-item"><span class="check">✓</span>Controle de parcelas</div>
+        <div class="bonus-item"><span class="check">✓</span>Calculadora de economia</div>
+        <div class="bonus-item"><span class="check">✓</span>Checklist semanal</div>
+        <div class="bonus-item"><span class="check">✓</span>Checklist mensal</div>
+        <div class="bonus-item"><span class="check">✓</span>Calendário financeiro (12 meses)</div>
+        <div class="bonus-item"><span class="check">✓</span>Lista de metas</div>
+        <div class="bonus-item"><span class="check">✓</span>Página de acompanhamento da evolução</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="oferta">
+    <div class="wrap">
+      <h2 class="section-title">Comece a organizar suas finanças hoje</h2>
+      <div class="offer-card">
+        <div class="price-note" style="margin-bottom:2px; color:var(--gold-dark); font-weight:700; text-transform:uppercase; font-size:13px; letter-spacing:1px;">Preço de lançamento</div>
+        <div class="price">R$27,00</div>
+        <div class="price-note">Pagamento único · Acesso imediato e vitalício</div>
+        <div class="items">
+          <div><span class="check">✓</span> E-book completo (8 capítulos práticos)</div>
+          <div><span class="check">✓</span> 10 planilhas e checklists prontos</div>
+          <div><span class="check">✓</span> Plano de 90 dias, semana a semana</div>
+          <div><span class="check">✓</span> Acesso pelo computador ou celular</div>
+        </div>
+        <a class="cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Garantir meu acesso agora →</a>
+      </div>
+      <div class="guarantee">
+        <div class="seal">🛡️</div>
+        <p><strong>Garantia de 7 dias.</strong> Se você aplicar o método e sentir que não é pra você, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <h2 class="section-title">Perguntas frequentes</h2>
+      <div class="faq-item">
+        <h3>Funciona mesmo ganhando só 1 salário mínimo?</h3>
+        <p>Sim. O método foi desenhado especificamente para essa faixa de renda — os exemplos, planilhas e percentuais de orçamento usam R$1.621,00 como referência.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Preciso de algum aplicativo ou planilha paga?</h3>
+        <p>Não. Todos os materiais já vêm prontos dentro do e-book, em formato editável. Você só precisa de um celular ou computador.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Em quanto tempo vejo resultado?</h3>
+        <p>O plano é estruturado em 90 dias, mas boa parte das pessoas já sente diferença no controle financeiro nas primeiras 2 a 3 semanas, ao aplicar o diagnóstico e o orçamento.</p>
+      </div>
+      <div class="faq-item">
+        <h3>E se eu não gostar?</h3>
+        <p>Você tem 7 dias de garantia incondicional. Se não for pra você, é só pedir o reembolso.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Como recebo o material?</h3>
+        <p>Por e-mail, imediatamente após a confirmação do pagamento, com acesso vitalício.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Você não precisa ganhar mais. Precisa de um método.</h2>
+      <p>Comece hoje o plano de 90 dias que vai te tirar do vermelho — mesmo ganhando um salário mínimo.</p>
+      <a class="cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Quero organizar minhas finanças →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Como Sair do Vermelho Ganhando um Salário Mínimo — material educativo de organização financeira pessoal.<br>
+      Este produto não constitui aconselhamento financeiro profissional individualizado.
+    </div>
+  </footer>
+
+</body>
+</html>
