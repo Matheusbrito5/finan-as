@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Como Sair do Vermelho Ganhando um Salário Mínimo</title>
-
+<title>5 Passos para Limpar seu Nome — Guia Prático em PDF</title>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -24,311 +23,339 @@ src="https://www.facebook.com/tr?id=1839357353669721&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <style>
   :root{
-    --navy:#12233A; --navy-light:#1E3B5C; --gold:#C6900C; --gold-light:#E9C165; --gold-dark:#946B08;
-    --green:#2A6B4A; --green-light:#3E8A63; --red:#B3382A; --red-light:#C6564A;
-    --paper:#FAF6EC; --line:#E4D9BE; --ink:#1B2430;
+    --paper:#F5F0E4;
+    --paper-line:#E3DAC3;
+    --paper-border:#D8CDAE;
+    --ink:#1B1B1B;
+    --ink-soft:#4A4438;
+    --green:#0F5C4C;
+    --green-dark:#0B4638;
+    --green-tint:#E3EEE9;
+    --red:#B23A2E;
+    --gold:#7A6A3E;
+    --cream:#FBF8F1;
   }
-  *{margin:0; padding:0; box-sizing:border-box;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
   body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height:1.55;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.5;
   }
-  h1,h2,h3{ font-family: Georgia, 'Times New Roman', serif; color: var(--navy); }
-  .wrap{ max-width: 880px; margin:0 auto; padding: 0 28px; }
-  a{ text-decoration:none; }
+  .ledger{
+    background-image:repeating-linear-gradient(to bottom, transparent 0, transparent 39px, var(--paper-line) 39px, var(--paper-line) 40px);
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+  a{color:inherit;}
 
-  /* HERO */
-  .hero{
-    background: linear-gradient(165deg, var(--navy) 0%, #0C1826 100%);
-    color:#fff; padding: 64px 0 84px;
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:50;
+    background:var(--paper); border-bottom:2px solid var(--paper-border);
   }
-  .hero .eyebrow{
-    color: var(--gold-light); font-size:15px; font-weight:700; letter-spacing:4px; text-transform:uppercase; text-align:center;
-  }
-  .hero h1{
-    color:#fff; font-size:42px; line-height:1.25; text-align:center; margin:18px auto 20px; max-width:720px;
-  }
-  .hero h1 .hl{ color: var(--gold-light); }
-  .hero .sub{
-    text-align:center; font-size:19px; color:#DDE3EC; max-width:620px; margin:0 auto 34px;
-  }
-  .hero-cta{
-    display:block; max-width:420px; margin: 0 auto; text-align:center;
-    background: linear-gradient(180deg, var(--gold-light), var(--gold));
-    color: var(--navy); font-weight:800; font-size:19px; letter-spacing:0.3px;
-    padding:18px 20px; border-radius:12px; box-shadow: 0 8px 0 rgba(0,0,0,0.25);
-  }
-  .hero-note{ text-align:center; color:#B9C2CF; font-size:14px; margin-top:14px; }
-
-  .stampbar{
-    display:flex; justify-content:center; gap:14px; margin: 40px auto 0; flex-wrap:wrap;
-  }
-  .stamp{
-    background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15);
-    border-radius:10px; padding:14px 20px; text-align:center; min-width:140px;
-  }
-  .stamp .n{ color: var(--gold-light); font-family:Georgia, serif; font-size:26px; font-weight:700; }
-  .stamp .l{ color:#C7CFDA; font-size:12px; letter-spacing:0.5px; margin-top:2px; }
-
-  /* SECTION GENERIC */
-  section{ padding: 64px 0; }
-  .section-title{ font-size:32px; text-align:center; margin-bottom:14px; }
-  .section-sub{ text-align:center; color:#5B6472; font-size:17px; max-width:600px; margin:0 auto 40px; }
-
-  /* PAIN */
-  .pain{ background:#fff; }
-  .pain-list{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; max-width:760px; margin:0 auto; }
-  .pain-item{
-    display:flex; gap:12px; align-items:flex-start; background: var(--paper);
-    border:1px solid var(--line); border-radius:12px; padding:18px 20px;
-  }
-  .pain-item .x{ color: var(--red); font-weight:800; font-size:20px; }
-  .pain-item p{ font-size:16px; color: var(--ink); }
-
-  /* BRIDGE */
-  .bridge{ text-align:center; }
-  .bridge blockquote{
-    font-family: Georgia, serif; font-size:26px; color: var(--navy); font-style:italic;
-    max-width:700px; margin: 0 auto; line-height:1.5; border-left:4px solid var(--gold); padding-left:24px; text-align:left;
+  .topbar .wrap{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{font-weight:900; font-size:20px; letter-spacing:0.5px;}
+  .brand span{color:var(--red);}
+  .topbar .cta{
+    background:var(--green); color:var(--cream); font-weight:800; font-size:14px;
+    padding:12px 22px; border-radius:8px; text-decoration:none; letter-spacing:0.3px;
+    white-space:nowrap;
   }
 
-  /* TRANSFORM TABLE */
-  .transform{ background:#fff; }
-  table.transform-table{
-    width:100%; max-width:640px; margin:0 auto; border-collapse:collapse; font-size:16px;
+  /* ---------- hero ---------- */
+  .hero{padding:64px 0 56px; border-bottom:2px solid var(--paper-border);}
+  .hero .wrap{display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:14px; font-weight:800; color:var(--green); letter-spacing:3px;
+    margin-bottom:20px;
   }
-  table.transform-table th{
-    background: var(--navy); color:#fff; padding:12px 16px; text-align:left; font-size:14px; letter-spacing:0.5px;
+  .eyebrow::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--red); display:inline-block;}
+  h1{
+    font-size:56px; font-weight:900; line-height:1.05; letter-spacing:-0.5px;
+    margin-bottom:20px;
   }
-  table.transform-table td{ padding:12px 16px; border-bottom:1px solid var(--line); }
-  table.transform-table tr:last-child td{ font-weight:800; }
-  .red-txt{ color:var(--red); font-weight:700; }
-  .green-txt{ color:var(--green); font-weight:700; }
+  h1 .accent{color:var(--red);}
+  .hero p.lead{font-size:19px; color:var(--ink-soft); max-width:520px; margin-bottom:28px;}
+  .trust-row{display:flex; flex-wrap:wrap; gap:10px 22px; margin-bottom:32px;}
+  .trust-item{display:flex; align-items:center; gap:8px; font-size:14px; font-weight:700; color:var(--ink-soft);}
+  .trust-item svg{flex:none;}
+  .hero-cta{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--green); color:var(--cream); font-weight:800; font-size:18px;
+    padding:18px 30px; border-radius:10px; text-decoration:none; display:inline-block;
+    box-shadow:0 10px 24px -8px rgba(15,92,76,0.45);
+  }
+  .price-note{font-size:15px; color:var(--ink-soft);}
+  .price-note strong{color:var(--ink); font-size:22px;}
 
-  /* WHATS INSIDE */
-  .inside{ }
-  .chapters{ display:flex; flex-direction:column; gap:10px; max-width:700px; margin: 0 auto; }
-  .chapter{
-    display:flex; gap:16px; align-items:center; background:#fff; border:1px solid var(--line);
-    border-radius:10px; padding:16px 20px;
+  /* book mockup */
+  .mockup-wrap{display:flex; justify-content:center;}
+  .book{
+    width:260px; height:360px; border-radius:8px; position:relative;
+    background:linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    transform:rotate(-6deg);
+    box-shadow:26px 30px 0 -6px rgba(11,70,56,0.15), 0 30px 50px -18px rgba(0,0,0,0.35);
+    color:var(--cream);
+    padding:34px 26px;
+    display:flex; flex-direction:column; gap:10px;
   }
-  .chapter .num{
-    font-family: Georgia, serif; color: var(--gold-dark); font-size:22px; font-weight:700; min-width:34px;
-  }
-  .chapter .txt{ font-size:16px; color: var(--ink); }
+  .book::before{content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:rgba(0,0,0,0.18); border-radius:8px 0 0 8px;}
+  .book .num{font-size:52px; font-weight:900; margin-top:6px;}
+  .book .label{font-size:17px; font-weight:800; letter-spacing:2px;}
+  .book .sub{font-size:13px; opacity:0.85; max-width:170px;}
+  .book .lines{margin-top:auto; display:flex; flex-direction:column; gap:10px;}
+  .book .lines div{height:1.5px; background:rgba(255,255,255,0.35);}
+  .book .lines div:nth-child(3){width:60%;}
 
-  /* BONUS */
-  .bonus{ background:#fff; }
-  .bonus-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; max-width:760px; margin:0 auto; }
-  .bonus-item{
-    display:flex; gap:10px; align-items:flex-start; font-size:15px; padding:14px 16px;
-    background: var(--paper); border-radius:10px; border:1px solid var(--line);
-  }
-  .bonus-item .check{ color: var(--green); font-weight:800; }
+  /* ---------- stat strip ---------- */
+  .stats{background:var(--green); color:var(--cream); padding:28px 0;}
+  .stats .wrap{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; text-align:center;}
+  .stats .num{font-size:34px; font-weight:900;}
+  .stats .cap{font-size:13px; opacity:0.85; letter-spacing:0.4px; margin-top:4px;}
+  .stats .div{border-left:1px solid rgba(255,255,255,0.25);}
 
-  /* OFFER */
-  .offer{
-    background: linear-gradient(165deg, var(--navy), #0C1826); color:#fff; text-align:center;
+  /* ---------- section shared ---------- */
+  section{padding:76px 0;}
+  .section-head{max-width:640px; margin:0 auto 44px; text-align:center;}
+  .section-head .tag{font-size:13px; font-weight:800; color:var(--red); letter-spacing:2.5px; display:block; margin-bottom:12px;}
+  .section-head h2{font-size:36px; font-weight:900; letter-spacing:-0.3px;}
+  .section-head p{color:var(--ink-soft); font-size:17px; margin-top:12px;}
+
+  /* problem list */
+  .problem-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; max-width:820px; margin:0 auto;}
+  .problem-card{
+    background:var(--cream); border:2px solid var(--paper-border); border-radius:10px;
+    padding:20px 22px; display:flex; gap:14px; align-items:flex-start;
   }
-  .offer h2{ color:#fff; }
-  .offer-card{
-    background:#fff; color: var(--ink); max-width:480px; margin: 34px auto 0; border-radius:18px;
-    padding:36px 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  .problem-card .x{
+    flex:none; width:26px; height:26px; border-radius:50%; background:var(--red); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-weight:900; font-size:15px;
   }
-  .offer-card .old-price{ color:#8A93A0; text-decoration:line-through; font-size:18px; }
-  .offer-card .price{ font-family:Georgia, serif; font-size:56px; color: var(--navy); font-weight:700; margin:6px 0 4px; }
-  .offer-card .price-note{ color:#5B6472; font-size:14px; margin-bottom:22px; }
-  .offer-card .cta{
-    display:block; background: linear-gradient(180deg, var(--gold-light), var(--gold)); color: var(--navy);
-    font-weight:800; font-size:18px; padding:16px; border-radius:12px; box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+  .problem-card p{font-size:15.5px; color:var(--ink);}
+
+  /* steps */
+  .steps{max-width:760px; margin:0 auto;}
+  .step{
+    display:grid; grid-template-columns:74px 1fr; gap:22px;
+    padding:24px 0; border-bottom:1.5px dashed var(--paper-border);
   }
-  .offer-card .items{ text-align:left; margin: 22px 0; }
-  .offer-card .items div{ display:flex; gap:10px; font-size:15px; margin-bottom:10px; }
-  .offer-card .items .check{ color: var(--green); font-weight:800; }
+  .step:last-child{border-bottom:none;}
+  .step .n{
+    font-size:40px; font-weight:900; color:var(--paper); -webkit-text-stroke:2px var(--red);
+    line-height:1;
+  }
+  .step h3{font-size:20px; font-weight:800; margin-bottom:6px;}
+  .step p{font-size:15.5px; color:var(--ink-soft);}
+
+  /* stamp badges */
+  .badges{display:flex; justify-content:center; gap:56px; flex-wrap:wrap;}
+  .badge{width:170px; text-align:center;}
+  .badge .ring{
+    width:130px; height:130px; border-radius:50%; border:5px solid var(--red);
+    display:flex; align-items:center; justify-content:center; margin:0 auto 14px;
+    position:relative;
+  }
+  .badge .ring::after{
+    content:""; position:absolute; inset:12px; border-radius:50%; border:2.5px dashed var(--red); opacity:0.55;
+  }
+  .badge .ring span{font-size:13px; font-weight:800; color:var(--red); letter-spacing:1px; line-height:1.3; position:relative; z-index:1;}
+  .badge p{font-size:14.5px; color:var(--ink-soft); font-weight:700;}
+
+  /* guarantee */
   .guarantee{
-    max-width:480px; margin: 22px auto 0; display:flex; gap:12px; align-items:center;
-    background: rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:12px; padding:16px 18px;
-    text-align:left;
+    background:var(--green-tint); border:2px solid var(--green); border-radius:16px;
+    max-width:820px; margin:0 auto; padding:36px 40px; display:flex; gap:26px; align-items:center;
   }
-  .guarantee .seal{ font-size:30px; }
-  .guarantee p{ font-size:14px; color:#DDE3EC; }
-
-  /* FAQ */
-  .faq{ background:#fff; }
-  .faq-item{ max-width:700px; margin: 0 auto 14px; border-bottom:1px solid var(--line); padding-bottom:14px; }
-  .faq-item h3{ font-size:18px; margin-bottom:6px; }
-  .faq-item p{ font-size:15px; color:#4A5261; }
-
-  /* FINAL CTA */
-  .final{ text-align:center; }
-  .final h2{ font-size:30px; margin-bottom:14px; }
-  .final p{ color:#5B6472; max-width:520px; margin: 0 auto 26px; font-size:16px; }
-  .final .cta{
-    display:inline-block; background: var(--navy); color: var(--gold-light); font-weight:800; font-size:19px;
-    padding:18px 36px; border-radius:12px; box-shadow: 0 8px 0 rgba(18,35,58,0.3);
+  .guarantee .seal{
+    flex:none; width:96px; height:96px; border-radius:50%; background:var(--green); color:var(--cream);
+    display:flex; align-items:center; justify-content:center; font-weight:900; font-size:15px; text-align:center; line-height:1.25;
   }
+  .guarantee h3{font-size:22px; font-weight:900; margin-bottom:8px;}
+  .guarantee p{font-size:15.5px; color:var(--ink-soft);}
 
-  footer{ text-align:center; padding: 36px 0; color:#8A93A0; font-size:13px; }
+  /* faq */
+  .faq{max-width:760px; margin:0 auto;}
+  details{
+    background:var(--cream); border:2px solid var(--paper-border); border-radius:10px;
+    padding:18px 22px; margin-bottom:12px;
+  }
+  summary{font-weight:800; font-size:16.5px; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:12px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+"; font-size:22px; color:var(--red); font-weight:900;}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:12px; font-size:15px; color:var(--ink-soft);}
 
-  @media (max-width:600px){
-    .hero h1{ font-size:30px; }
-    .pain-list{ grid-template-columns: 1fr; }
-    .bonus-grid{ grid-template-columns: 1fr; }
-    .stampbar{ gap:10px; }
+  /* final cta */
+  .final-cta{background:var(--ink); color:var(--cream); text-align:center; padding:80px 0;}
+  .final-cta h2{font-size:38px; font-weight:900; margin-bottom:14px;}
+  .final-cta p{color:#C9C2AE; font-size:17px; margin-bottom:30px;}
+  .final-cta .btn-primary{box-shadow:0 10px 30px -6px rgba(178,58,46,0.35);}
+
+  footer{padding:36px 0; text-align:center; font-size:13px; color:var(--gold);}
+  footer .legal{max-width:640px; margin:10px auto 0; color:#8A806A; font-size:12px; line-height:1.6;}
+
+  @media(max-width:860px){
+    .hero .wrap{grid-template-columns:1fr; gap:40px;}
+    .mockup-wrap{order:-1;}
+    h1{font-size:40px;}
+    .stats .wrap{grid-template-columns:1fr; gap:18px;}
+    .stats .div{border-left:none; border-top:1px solid rgba(255,255,255,0.25); padding-top:18px;}
+    .problem-grid{grid-template-columns:1fr;}
+    .badges{gap:32px;}
+    .guarantee{flex-direction:column; text-align:center; padding:32px 24px;}
+    section{padding:56px 0;}
+    .section-head h2{font-size:28px;}
   }
 </style>
 </head>
-<body>
+<body class="ledger">
 
-  <section class="hero">
+  <div class="topbar">
     <div class="wrap">
-      <div class="eyebrow">Método passo a passo · Acesso imediato</div>
-      <h1>Fecha o mês <span class="hl">no vermelho</span> mesmo trabalhando o mês inteiro?</h1>
-      <p class="sub">O guia prático que ensina, passo a passo, como organizar suas finanças, negociar dívidas e criar sua reserva de emergência — mesmo ganhando só um salário mínimo.</p>
-      <a class="hero-cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Quero sair do vermelho agora →</a>
-      <p class="hero-note">E-book + 10 planilhas prontas · Pagamento único de R$27</p>
-
-      <div class="stampbar">
-        <div class="stamp"><div class="n">8</div><div class="l">CAPÍTULOS PRÁTICOS</div></div>
-        <div class="stamp"><div class="n">10</div><div class="l">PLANILHAS PRONTAS</div></div>
-        <div class="stamp"><div class="n">90</div><div class="l">DIAS DE PLANO</div></div>
-      </div>
+      <div class="brand">Limpa<span>Nome</span></div>
+      <a href="https://pay.payonpag.io/ZjZWZneu" onclick="if(window.fbq){fbq('track','InitiateCheckout');}" class="cta">Quero o guia →</a>
     </div>
-  </section>
+  </div>
 
-  <section class="pain">
+  <header class="hero">
     <div class="wrap">
-      <h2 class="section-title">Isso parece com você?</h2>
-      <p class="section-sub">Se você se identificar com pelo menos 2 destas frases, este guia foi escrito pensando exatamente em você.</p>
-      <div class="pain-list">
-        <div class="pain-item"><span class="x">✕</span><p>Você trabalha o mês inteiro e, mesmo assim, o dinheiro nunca fecha.</p></div>
-        <div class="pain-item"><span class="x">✕</span><p>Você não sabe, com exatidão, pra onde seu salário está indo.</p></div>
-        <div class="pain-item"><span class="x">✕</span><p>Você usa o cartão de crédito pra cobrir imprevistos pequenos.</p></div>
-        <div class="pain-item"><span class="x">✕</span><p>Você acredita que só vai se organizar quando ganhar mais.</p></div>
-        <div class="pain-item"><span class="x">✕</span><p>Você já tentou se organizar sozinho e não conseguiu manter.</p></div>
-        <div class="pain-item"><span class="x">✕</span><p>Você sente vergonha ou medo de negociar suas dívidas.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bridge">
-    <div class="wrap">
-      <blockquote>Você não precisa ganhar mais para sair do vermelho. Precisa, pela primeira vez, ver para onde seu dinheiro está indo — e decidir, você, para onde ele deveria ir.</blockquote>
-    </div>
-  </section>
-
-  <section class="transform">
-    <div class="wrap">
-      <h2 class="section-title">O que muda quando você aplica o método</h2>
-      <p class="section-sub">Exemplo real de reorganização de orçamento com renda de 1 salário mínimo (R$ 1.621,00):</p>
-      <table class="transform-table">
-        <tr><th>Item</th><th>Antes</th><th>Depois</th></tr>
-        <tr><td>Cartão de crédito (juros do rotativo)</td><td class="red-txt">R$ 300,00/mês</td><td class="green-txt">Renegociado</td></tr>
-        <tr><td>Mercado (sem planejamento)</td><td class="red-txt">R$ 500,00/mês</td><td class="green-txt">R$ 380,00/mês</td></tr>
-        <tr><td>Reserva de emergência</td><td class="red-txt">R$ 0,00</td><td class="green-txt">R$ 41,00/mês</td></tr>
-        <tr><td>Saldo no fim do mês</td><td class="red-txt">-R$ 379,00</td><td class="green-txt">R$ 0,00 (equilibrado)</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <section class="inside">
-    <div class="wrap">
-      <h2 class="section-title">O que você vai encontrar dentro do guia</h2>
-      <p class="section-sub">8 capítulos práticos, cada um com exemplo real, passo a passo, exercício e checklist.</p>
-      <div class="chapters">
-        <div class="chapter"><div class="num">01</div><div class="txt">Por que você continua no vermelho (mesmo trabalhando duro)</div></div>
-        <div class="chapter"><div class="num">02</div><div class="txt">O raio-X das suas finanças — o diagnóstico completo</div></div>
-        <div class="chapter"><div class="num">03</div><div class="txt">O orçamento que cabe no seu salário mínimo</div></div>
-        <div class="chapter"><div class="num">04</div><div class="txt">Cortando gastos sem perder qualidade de vida</div></div>
-        <div class="chapter"><div class="num">05</div><div class="txt">Como negociar suas dívidas sem vergonha e sem medo</div></div>
-        <div class="chapter"><div class="num">06</div><div class="txt">Reserva de emergência mesmo ganhando pouco</div></div>
-        <div class="chapter"><div class="num">07</div><div class="txt">Hábitos financeiros que realmente funcionam</div></div>
-        <div class="chapter"><div class="num">08</div><div class="txt">Como evitar voltar para o vermelho</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bonus">
-    <div class="wrap">
-      <h2 class="section-title">+ 10 materiais prontos pra preencher</h2>
-      <p class="section-sub">Sem precisar criar nada do zero — é só abrir e preencher.</p>
-      <div class="bonus-grid">
-        <div class="bonus-item"><span class="check">✓</span>Planilha de controle de gastos</div>
-        <div class="bonus-item"><span class="check">✓</span>Planejamento financeiro mensal</div>
-        <div class="bonus-item"><span class="check">✓</span>Controle de dívidas</div>
-        <div class="bonus-item"><span class="check">✓</span>Controle de parcelas</div>
-        <div class="bonus-item"><span class="check">✓</span>Calculadora de economia</div>
-        <div class="bonus-item"><span class="check">✓</span>Checklist semanal</div>
-        <div class="bonus-item"><span class="check">✓</span>Checklist mensal</div>
-        <div class="bonus-item"><span class="check">✓</span>Calendário financeiro (12 meses)</div>
-        <div class="bonus-item"><span class="check">✓</span>Lista de metas</div>
-        <div class="bonus-item"><span class="check">✓</span>Página de acompanhamento da evolução</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="offer" id="oferta">
-    <div class="wrap">
-      <h2 class="section-title">Comece a organizar suas finanças hoje</h2>
-      <div class="offer-card">
-        <div class="price-note" style="margin-bottom:2px; color:var(--gold-dark); font-weight:700; text-transform:uppercase; font-size:13px; letter-spacing:1px;">Preço de lançamento</div>
-        <div class="price">R$27,00</div>
-        <div class="price-note">Pagamento único · Acesso imediato e vitalício</div>
-        <div class="items">
-          <div><span class="check">✓</span> E-book completo (8 capítulos práticos)</div>
-          <div><span class="check">✓</span> 10 planilhas e checklists prontos</div>
-          <div><span class="check">✓</span> Plano de 90 dias, semana a semana</div>
-          <div><span class="check">✓</span> Acesso pelo computador ou celular</div>
+      <div>
+        <span class="eyebrow">GUIA PRÁTICO · PDF</span>
+        <h1>Seu nome limpo em <span class="accent">30 dias</span>, sem cair em golpe</h1>
+        <p class="lead">O método de 5 passos para negociar suas dívidas, sair do Serasa e do SPC e recuperar seu crédito — direto ao ponto, sem enrolação.</p>
+        <div class="trust-row">
+          <span class="trust-item">✓ Acesso imediato em PDF</span>
+          <span class="trust-item">✓ Leia no celular ou computador</span>
+          <span class="trust-item">✓ Garantia de 7 dias</span>
         </div>
-        <a class="cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Garantir meu acesso agora →</a>
+        <div class="hero-cta">
+          <a href="https://pay.payonpag.io/ZjZWZneu" onclick="if(window.fbq){fbq('track','InitiateCheckout');}" class="btn-primary">Quero limpar meu nome →</a>
+          <span class="price-note">Por apenas <strong>R$ 19,90</strong></span>
+        </div>
       </div>
+      <div class="mockup-wrap">
+        <div class="book">
+          <span class="num">5</span>
+          <span class="label">PASSOS</span>
+          <span class="sub">para limpar seu nome rápido</span>
+          <div class="lines"><div></div><div></div><div></div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="wrap">
+      <div><div class="num">81 mi+</div><div class="cap">brasileiros negativados hoje</div></div>
+      <div class="div"><div class="num">5</div><div class="cap">passos, sem enrolação</div></div>
+      <div class="div"><div class="num">30 dias</div><div class="cap">para regularizar seu CPF</div></div>
+    </div>
+  </div>
+
+  <section id="problema">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">O PROBLEMA</span>
+        <h2>Nome sujo fecha porta todo dia</h2>
+        <p>E quanto mais tempo passa, mais difícil parece resolver.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card"><span class="x">✕</span><p>Financiamento e cartão de crédito recusados</p></div>
+        <div class="problem-card"><span class="x">✕</span><p>Aluguel de imóvel negado por causa do CPF</p></div>
+        <div class="problem-card"><span class="x">✕</span><p>Medo de ligação de credor e de ser enganado por golpe</p></div>
+        <div class="problem-card"><span class="x">✕</span><p>Não saber por onde começar nem o que priorizar</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" style="background:var(--cream); border-top:2px solid var(--paper-border); border-bottom:2px solid var(--paper-border);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">O MÉTODO</span>
+        <h2>5 passos, nesta ordem, sem pular nenhum</h2>
+        <p>É a sequência que evita o erro mais comum: negociar sem plano e travar de novo.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><h3>Consulte seu CPF e mapeie as dívidas</h3><p>Descubra exatamente quanto deve, para quem, e desde quando — de graça, nos canais oficiais.</p></div></div>
+        <div class="step"><div class="n">2</div><div><h3>Priorize antes de negociar</h3><p>Organize por urgência e por quanto cabe no seu orçamento, sem assumir o que não vai conseguir pagar.</p></div></div>
+        <div class="step"><div class="n">3</div><div><h3>Negocie buscando o maior desconto</h3><p>Compare credor direto, plataformas e feirões — descontos chegam a 90–99% em muitos casos.</p></div></div>
+        <div class="step"><div class="n">4</div><div><h3>Feche o acordo do jeito certo</h3><p>Pix atualiza o CPF quase na hora. Boleto pode levar até 5 dias úteis — saiba a diferença antes de pagar.</p></div></div>
+        <div class="step"><div class="n">5</div><div><h3>Confirme a baixa e monitore</h3><p>Verifique se o nome realmente saiu da lista e ative alertas gratuitos para não cair de novo.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="confianca">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">POR QUE CONFIAR</span>
+        <h2>Feito para quem já cansou de promessa vazia</h2>
+      </div>
+      <div class="badges">
+        <div class="badge"><div class="ring"><span>MÉTODO<br>TESTADO</span></div><p>Baseado em como negociação de dívida funciona de verdade</p></div>
+        <div class="badge"><div class="ring"><span>SEM<br>ENROLAÇÃO</span></div><p>5 passos objetivos, sem enrolar página com conteúdo genérico</p></div>
+        <div class="badge"><div class="ring"><span>SEM<br>GOLPE</span></div><p>Te ensina a reconhecer e evitar serviços fraudulentos do setor</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="garantia" style="padding-top:0;">
+    <div class="wrap">
       <div class="guarantee">
-        <div class="seal">🛡️</div>
-        <p><strong>Garantia de 7 dias.</strong> Se você aplicar o método e sentir que não é pra você, devolvemos 100% do seu dinheiro, sem perguntas.</p>
+        <div class="seal">7 DIAS<br>DE GARANTIA</div>
+        <div>
+          <h3>Risco zero para você</h3>
+          <p>Se em 7 dias você achar que o guia não te ajudou a organizar sua negociação, devolvemos 100% do valor. Sem perguntas, sem burocracia.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="faq">
+  <section id="faq" style="background:var(--cream); border-top:2px solid var(--paper-border);">
     <div class="wrap">
-      <h2 class="section-title">Perguntas frequentes</h2>
-      <div class="faq-item">
-        <h3>Funciona mesmo ganhando só 1 salário mínimo?</h3>
-        <p>Sim. O método foi desenhado especificamente para essa faixa de renda — os exemplos, planilhas e percentuais de orçamento usam R$1.621,00 como referência.</p>
+      <div class="section-head">
+        <span class="tag">DÚVIDAS COMUNS</span>
+        <h2>Perguntas frequentes</h2>
       </div>
-      <div class="faq-item">
-        <h3>Preciso de algum aplicativo ou planilha paga?</h3>
-        <p>Não. Todos os materiais já vêm prontos dentro do e-book, em formato editável. Você só precisa de um celular ou computador.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Em quanto tempo vejo resultado?</h3>
-        <p>O plano é estruturado em 90 dias, mas boa parte das pessoas já sente diferença no controle financeiro nas primeiras 2 a 3 semanas, ao aplicar o diagnóstico e o orçamento.</p>
-      </div>
-      <div class="faq-item">
-        <h3>E se eu não gostar?</h3>
-        <p>Você tem 7 dias de garantia incondicional. Se não for pra você, é só pedir o reembolso.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Como recebo o material?</h3>
-        <p>Por e-mail, imediatamente após a confirmação do pagamento, com acesso vitalício.</p>
+      <div class="faq">
+        <details>
+          <summary>Isso funciona mesmo, ou é golpe?</summary>
+          <p>É um guia educativo — ele te ensina a negociar e pagar suas dívidas do jeito certo. Não prometemos remover negativação sem pagamento, porque isso não existe de forma legítima. O guia inclusive te ensina a identificar esse tipo de golpe.</p>
+        </details>
+        <details>
+          <summary>Em quanto tempo meu nome fica limpo?</summary>
+          <p>Depende de quantas dívidas você tem e da forma de pagamento. Seguindo os 5 passos, a maioria das pessoas consegue negociar e ver a atualização do CPF dentro de 30 dias.</p>
+        </details>
+        <details>
+          <summary>Como recebo o material?</summary>
+          <p>É um PDF de acesso imediato após a confirmação da compra. Você pode ler no celular, tablet ou computador, sem precisar imprimir.</p>
+        </details>
+        <details>
+          <summary>Preciso ter dinheiro guardado para negociar?</summary>
+          <p>Não necessariamente. O guia mostra como priorizar e encontrar condições que cabem no seu orçamento, incluindo parcelamentos.</p>
+        </details>
+        <details>
+          <summary>E se eu não gostar?</summary>
+          <p>Você tem 7 dias de garantia incondicional. Se não fizer sentido pra você, devolvemos o valor integral.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <section class="final">
+  <section class="final-cta" id="comprar">
     <div class="wrap">
-      <h2>Você não precisa ganhar mais. Precisa de um método.</h2>
-      <p>Comece hoje o plano de 90 dias que vai te tirar do vermelho — mesmo ganhando um salário mínimo.</p>
-      <a class="cta" href="https://pay.kiwify.com.br/Zbm2dZP" target="_blank" rel="noopener" onclick="fbq('track','InitiateCheckout');">Quero organizar minhas finanças →</a>
+      <h2>Seu nome pode estar limpo em 30 dias</h2>
+      <p>PDF de acesso imediato · R$ 19,90 · garantia de 7 dias</p>
+      <a href="https://pay.payonpag.io/ZjZWZneu" onclick="if(window.fbq){fbq('track','InitiateCheckout');}" class="btn-primary">Quero limpar meu nome agora →</a>
     </div>
   </section>
 
-  <footer>
+  <footer class="ledger">
     <div class="wrap">
-      Como Sair do Vermelho Ganhando um Salário Mínimo — material educativo de organização financeira pessoal.<br>
-      Este produto não constitui aconselhamento financeiro profissional individualizado.
+      <div>Limpa<span style="color:var(--red)">Nome</span> · Edição 2026</div>
+      <p class="legal">Produto digital educacional independente. Não somos afiliados ao Serasa, SPC Brasil ou qualquer birô de crédito. Os dados citados têm fonte pública (Serasa, 2026). Este material não garante resultado específico, pois cada negociação depende do credor e da situação individual.</p>
     </div>
   </footer>
 
